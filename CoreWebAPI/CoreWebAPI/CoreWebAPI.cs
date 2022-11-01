@@ -48,9 +48,6 @@ namespace CoreWebAPI.CoreWebAPI
                     { outValue = true; }
                 }
 
-                //if (String.Compare(guessedValue, outValue) == 0)
-                //{ return true; }
-
                 return outValue;
             }
 
