@@ -31,7 +31,7 @@ namespace CoreWebAPI.Controllers
             try
             {
 
-                if (string.IsNullOrEmpty(guess) || num == 0)
+                if (string.IsNullOrEmpty(guess) || num <= 0)
                 {
                     return BadRequest();
                 }
