@@ -11,36 +11,21 @@ namespace CoreWebAPI.CoreWebAPI
             {
                 bool outValue = false;
 
-                if(num%3 == 0 && num%5 == 0)
+                if (num % 3 == 0 && num % 5 == 0)
                 {
                     if (String.Compare(guessedValue, "foobar") == 0)
-                    { outValue =  true; }
-                    else if (num % 3 == 0)
-                    {
-                        if (String.Compare(guessedValue, "foo") == 0)
-                        { outValue = true; }
-                        else if (num % 5 == 0)
-                        {
-                            if (String.Compare(guessedValue, "bar") == 0)
-                            { outValue = true; }
-                        }
-                    }
-                    else if (num % 5 == 0)
-                    {
-                        if (String.Compare(guessedValue, "bar") == 0)
-                        { outValue = true; }
-                    }
-                }
+                    { outValue = true; }
 
-                else if(num % 3 == 0)
+                }
+                else if (num % 3 == 0)
                 {
                     if (String.Compare(guessedValue, "foo") == 0)
-                    { outValue =  true; }
+                    { outValue = true; }
                 }
                 else if (num % 5 == 0)
                 {
                     if (String.Compare(guessedValue, "bar") == 0)
-                    { outValue =  true; }
+                    { outValue = true; }
                 }
                 else
                 {
